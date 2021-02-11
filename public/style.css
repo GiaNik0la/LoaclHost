@@ -1,0 +1,125 @@
+html {
+    background-color: rgba(37, 37, 37);
+}
+
+#body{
+    background-color: rgba(37, 37, 37);
+};
+
+.navbar {
+    height: 50px;
+}
+
+.navnav {
+    color: rgb(31, 31, 31);
+    font-family: 'Texturina', serif;
+}
+
+span, p, b, i, h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.jj {
+    border-radius: 50px;
+    margin-left: 50px;
+}
+
+img {
+    border-radius: 50px !important;
+}
+
+#q {
+    background-color: rgb(71, 71, 71);
+    border-radius: 30px;
+    width: 50%
+}
+
+p {
+    border: 5px solid rgb(122, 122, 122);
+    border-radius: 30px;
+    background-color: rgb(83, 83, 83);
+}
+
+.cb {
+    border: gray solid 30px;
+    border-radius: 50px;
+    width: 96%;
+    background-color: gray;
+}
+
+.cv {
+    border: gray solid 30px;
+    border-radius: 50px;
+    width: 200px;
+    background-color: gray;
+}
+
+.topright {
+    border-top-right-radius: 50px !important; 
+}
+
+.topleft {
+    border-top-left-radius: 50px !important; 
+}
+
+.bottomleft {
+    border-bottom-left-radius: 50px !important;
+}
+
+.bottomright {
+    border-bottom-right-radius: 50px !important;
+}
+
+p {
+    cursor: default;
+}
+
+.sidebar {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .esc {
+    margin-bottom: 1px;
+  }
+
+  .jj {
+      border: 3px solid black
+  }
+
+.IDK {
+    border-right: 2px solid black;
+}
+
+.card {
+    background-color: white;
+}
