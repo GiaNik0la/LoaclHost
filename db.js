@@ -1,4 +1,3 @@
-//fdghsudfghjuhsdfguhu
 const MongoClient = require("mongodb").MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 const dbname = "crud_mongodb";
