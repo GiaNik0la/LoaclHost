@@ -65,7 +65,9 @@ app.listen(3000, function () {
   console.log("Sever started!");
 });
 
-
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true }, err => {
+  console.log('Connected...')
+});
 
 
 /*
