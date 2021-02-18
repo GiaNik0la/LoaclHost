@@ -75,7 +75,7 @@ var ImagesSchema = new mongoose.Schema({
   Image: String,
 });
 
-var Images = mongoose.model("Images", ImagesSchema);
+var Images = mongoose.model("Image", ImagesSchema);
 /*
   var count = 0;
 
