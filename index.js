@@ -67,9 +67,10 @@ app.listen(3000, function () {
 mongoose.Promise = global.Promise;
 
 mongoose
-  .connect("mongodb://localhost:27017/Revolt_Images", { useNewUrlParser: true })
+  .connect("mongodb://127.0.0.1:27017/Images", { useNewUrlParser: true })
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log("This is error : " + err));
+
 
 /*
   var count = 0;
