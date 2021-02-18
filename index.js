@@ -77,6 +77,20 @@ var ImagesSchema = new mongoose.Schema({
 
 var Images = mongoose.model("Image", ImagesSchema);
 
+Images.create({
+
+  name:"test 1000th",
+  Image: "https://images.unsplash.com/photo-1600353068218-27240d813841?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+  
+  },function(err,images){
+  if(err){
+    console.log(err);
+  }else {
+    console.log("Image Successful");
+    console.log(images);
+  }
+});
+
 /*
   var count = 0;
 
