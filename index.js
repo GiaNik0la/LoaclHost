@@ -2,11 +2,15 @@ const fs = require('fs');
 
 //სერვერი
 var express = require("express"),
-  app = express();
+  app = express(),
+  mongoose = require("mongoose"),
+  passport = require("passport"),
+  LocalStrategy = require("passport-local");
 
 const bodyParser = require("body-parser");
 const path = require('path');
 const collection = "todo";
+
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
