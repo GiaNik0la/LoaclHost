@@ -68,8 +68,7 @@ mongoose.Promise = global.Promise;
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/Images", { useNewUrlParser: true })
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log("This is error : " + err));
+  .then(() => console.log("MongoDB Connected"));
 
 
 /*
