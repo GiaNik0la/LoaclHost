@@ -70,7 +70,12 @@ mongoose
   .connect("mongodb://127.0.0.1:27017/Images", { useNewUrlParser: true })
   .then(() => console.log("MongoDB Connected"));
 
+var ImagesSchema = new mongoose.Schema({
+  name: String,
+  Image: String,
+});
 
+var Images = mongoose.model("Images", ImagesSchema);
 /*
   var count = 0;
 
