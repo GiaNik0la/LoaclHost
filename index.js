@@ -6,8 +6,6 @@ var express = require("express"),
 
 const bodyParser = require("body-parser");
 const path = require('path');
-
-const db = require("./db");
 const collection = "todo";
 
 app.set("view engine", "ejs");
