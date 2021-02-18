@@ -86,7 +86,7 @@ Images.create({
   if(err){
     console.log(err);
   }else {
-    console.log("Image Successful");
+    console.log("Image Uploaded Successful");
     console.log(images);
   }
 });
