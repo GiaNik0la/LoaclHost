@@ -6,10 +6,9 @@ var express = require("express"),
   mongoose = require("mongoose"),
   passport = require("passport"),
   LocalStrategy = require("passport-local");
-
+const { Db, MongoClient } = require("mongodb");
 const bodyParser = require("body-parser");
 const path = require('path');
-const collection = "todo";
 
 
 app.set("view engine", "ejs");
