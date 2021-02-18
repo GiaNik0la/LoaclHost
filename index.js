@@ -64,11 +64,12 @@ app.get("/admin/addquiz/setupquiz", function (req, res) {
 app.listen(3000, function () {
   console.log("Sever started!");
 });
+mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true }, err => {
-  console.log('Connected...')
-});
-
+mongoose
+  .connect("mongodb://localhost:27017/Revolt_Images", { useNewUrlParser: true })
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log("This is error : " + err));
 
 /*
   var count = 0;
